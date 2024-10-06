@@ -33,14 +33,14 @@ variable "vpc_name" {
 
 ###common vars
 
-variable "vms_ssh_root_key" {
+/*variable "vms_ssh_root_key" {
   type        = string
   default     = "your_ssh_ed25519_key"
   description = "ssh-keygen -t ed25519"
-}
+}*/
 
 ###example vm_web var
-variable "vm_web_name" {
+/*variable "vm_web_name" {
   type        = string
   default     = "netology-develop-platform-web"
   description = "example vm_web_ prefix"
@@ -51,44 +51,44 @@ variable "vm_db_name" {
   type        = string
   default     = "netology-develop-platform-db"
   description = "example vm_db_ prefix"
-}
+}*/
 
 
 
 variable "vm_marketing" {
   type = object({
-    env_name = string
-    instance_name = string
+    env_name       = string
+    instance_name  = string
     instance_count = number
-    public_ip = bool
-    owner = string
-    project = string
+    public_ip      = bool
+    owner          = string
+    project        = string
   })
   default = {
-    env_name = "marketing"
-    instance_name = "marketing"
+    env_name       = "marketing"
+    instance_name  = "marketing"
     instance_count = 1
-    public_ip = true
-    owner = "andrey_inozemtsev_aka_drew"
-    project = "marketing"
+    public_ip      = true
+    owner          = "andrey_inozemtsev_aka_drew"
+    project        = "marketing"
   }
 }
 variable "vm_analytics" {
   type = object({
-    env_name = string
-    instance_name = string
+    env_name       = string
+    instance_name  = string
     instance_count = number
-    public_ip = bool
-    owner = string
-    project = string
+    public_ip      = bool
+    owner          = string
+    project        = string
   })
   default = {
-    env_name = "analytics"
-    instance_name = "analytics"
+    env_name       = "analytics"
+    instance_name  = "analytics"
     instance_count = 1
-    public_ip = true
-    owner = "andrey_inozemtsev_aka_drew"
-    project = "analytics"
+    public_ip      = true
+    owner          = "andrey_inozemtsev_aka_drew"
+    project        = "analytics"
   }
 }
 variable "vm_family" {
