@@ -5,3 +5,6 @@
 CKV_TF_2: "Ensure Terraform module sources use a tag with a version number"
 CKV_TF_1: "Ensure Terraform module sources use a commit hash"
 ### Задание 2
+
+
+![image](https://github.com/user-attachments/assets/de17d992-8e32-49bb-a1ad-b841e999048d)
