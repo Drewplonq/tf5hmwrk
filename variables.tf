@@ -105,3 +105,14 @@ variable "ssh_public_key" {
   type    = string
   default = "~/.ssh/id_ed25519.pub"
 }
+
+variable "ip_list" {
+  type        = list(string)
+  description = "список ip-адресов"
+
+  validation {
+    condition     = alltrue([for ip in var.ip_list : can(regex("^([0-9]{1,3}\\.){3}[0-9]{1,3}$", ip)) && cidrhost("${ip}/32", 0) != null])
+    error_message = "Все адреса в списке должны быть корректными IP-адресами."
+  }
+  default = ["192.168.0.1", "1.1.1.1", "127.0.0.1"] 
+}
