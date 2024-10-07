@@ -17,3 +17,14 @@ CKV_TF_1: "Ensure Terraform module sources use a commit hash"
 ### Задание 3
 
 [Pull request](https://github.com/Drewplonq/tf5hmwrk/pull/2)
+
+### Задание 4
+
+![image](https://github.com/user-attachments/assets/a28c1f08-3aa6-4fb8-b794-40eb7d0d1aaa)
+
+
+![image](https://github.com/user-attachments/assets/c93827a5-95d2-4dc1-9f00-89a88818357a)
+
+
+![image](https://github.com/user-attachments/assets/e8d1236b-b575-4671-b11b-3fd9628d7c29)
+
